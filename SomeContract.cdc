@@ -23,35 +23,19 @@ access(all) contract SomeContract {
 
         access(contract) fun contractFunc() {}
 
-        access(self) fun selfFunc() {}
+        access(self) fun privateFunc() {}
 
 
         pub fun structFunc() {
             /**************/
             /*** AREA 1 ***/
             /**************/
+            //variable read : a,b,c,d
 
-            //pub(set)
-            //
-            SomeContract.testStruct.a="FLOW"
-            let variableA = SomeContract.testStruct.a
+            //variable write :a,b,c,d
 
-            //pub
-            //
-            SomeContract.testStruct.b="FLOW"
-            let variableB = SomeContract.testStruct.b
-
-            //access(contract)
-            //
-            SomeContract.testStruct.c="FLOW"
-            let variableC = SomeContract.testStruct.c
-
-            //access(self)
-            //
-            SomeContract.testStruct.d="FLOW"
-            let variableD = SomeContract.testStruct.d
-
-
+            //function call:  publicfun,contarctfun,privatefun
+            
         }
 
         init() {
@@ -69,29 +53,11 @@ access(all) contract SomeContract {
             /**************/
             /*** AREA 2 ***/
             /**************/
+             //variable read :a,b,c
 
+            //variable write :a
 
-              //pub(set)
-              //
-              SomeContract.testStruct.a="FLOW"
-              let variableA = SomeContract.testStruct.a
-              
-              //pub
-              //
-              //SomeContract.testStruct.b="FLOW"
-              let variableB = SomeContract.testStruct.b
-              
-
-              //access(contract)
-              //
-               //SomeContract.testStruct.c="FLOW"
-              let variableC = SomeContract.testStruct.c
-              
-
-              //access(self)
-              //SomeContract.testStruct.d="FLOW"
-              //let variableD = SomeContract.testStruct.d
-
+            //function call :  publicfun,contarctfun
         }
 
         init() {
@@ -107,30 +73,11 @@ access(all) contract SomeContract {
         /**************/
         /*** AREA 3 ****/
         /**************/
+            //variable read  :a,b,c
 
+            //variable write :a
 
-            //pub(set)
-            //
-            SomeContract.testStruct.a="FLOW"
-            let variableA = SomeContract.testStruct.a
-
-            //pub
-            //
-            // SomeContract.testStruct.b="FLOW"
-            let variableB = SomeContract.testStruct.b
-
-
-            //access(contract)
-            //
-             //SomeContract.testStruct.c="FLOW"
-            let variableC = SomeContract.testStruct.c
-            
-
-            //access(self)
-            //
-            //SomeContract.testStruct.d="FLOW"
-            //let variableD = SomeContract.testStruct.d
-
+            //function call : publicfun,contarctfun
     }
 
     init() {
