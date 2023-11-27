@@ -102,10 +102,10 @@ To run this program, you can use Flow Playboard at https://play.flow.com/
 ```
 
 
-To deploy the code, We will be using the Flow Playground
+This contract has commented out all access control all the variables i.e a , b , c, d and three functions i.e publicFunc , contractFunc and privateFunc .
+Also, the access of these variables and functions inside the Script.cdc file is also provided.
 
-Once the contract is deployed, you can execute the ProductTransaction file provising the appropriate signer and filling the required values.
-Onece transaction file is executed , You can execute the ProductScript file to read the function declared in the cadence ProductContract file.
+
 
 ## Authors
 CodeBlocker52(https://github.com/CodeBlocker52 )
